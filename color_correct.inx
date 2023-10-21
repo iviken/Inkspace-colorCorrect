@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<inkscape-extension xmlns="http://www.inkscape.org/namespace/inkscape/extension">
+  <name>Color correct</name>
+  <id>com.github.LOGIN.name-extension</id>
+
+  <param name="R_channel" type="int" min="-127" max="127" gui-text="Red intensity" appearance="full">0</param>
+  <param name="G_channel" type="int" min="-127" max="127" gui-text="Green intensity" appearance="full">0</param>
+  <param name="B_channel" type="int" min="-127" max="127" gui-text="Blue intensity" appearance="full">0</param>
+  <param name="flag_toAll" type="bool" gui-text="Apply to all">true</param>
+
+  <effect>
+    <object-type>all</object-type>
+    <effects-menu>
+      
+    </effects-menu>
+  </effect>
+  <script>
+    <command location="inx" interpreter="python">color_correct.py</command>
+  </script>
+</inkscape-extension>
